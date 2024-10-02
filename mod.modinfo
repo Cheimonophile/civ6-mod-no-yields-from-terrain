@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ED53C65D-DA3A-4DFC-A44C-99E826E5000E" version="1">
+  <Properties>
+    <Name>BRMV's No Yields from Terrain</Name>
+    <Description>
+      Terrain types no longer provide yields.
+      Fishing boats can be placed on all sea tiles.
+      Marshes can be improved with farms.
+    </Description>
+    <Created>1727828156</Created>
+    <Teaser>Extend Amenities Through Trade</Teaser>
+    <Authors>Ben</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="gamedata">
+      <File>gamedata.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>gamedata.sql</File>
+  </Files>
+</Mod>
