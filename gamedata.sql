@@ -11,6 +11,10 @@ INSERT OR REPLACE INTO Building_YieldChanges
 
 -- Delete all terrain yields
 DELETE FROM Terrain_YieldChanges;
+INSERT OR REPLACE INTO Terrain_YieldChanges
+    SELECT TerrainType, 'YIELD_FOOD', 1
+    FROM Terrains
+    WHERE TerrainType LIKE '%GRASS%' OR TerrainType LIKE '%PLAINS%' OR TerrainType LIKE '%COAST%';
 
 
 -- Floodplains give +1 food
@@ -37,6 +41,5 @@ INSERT OR REPLACE INTO Improvement_ValidFeatures (ImprovementType, FeatureType)
 -- Allow fishing boats on all coast and lake tiles
 INSERT OR REPLACE INTO Improvement_ValidTerrains (ImprovementType, TerrainType)
     VALUES ('IMPROVEMENT_FISHING_BOATS', 'TERRAIN_COAST');
-s
 
 
