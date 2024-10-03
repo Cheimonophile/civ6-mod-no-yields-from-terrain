@@ -3,8 +3,6 @@
 UPDATE GlobalParameters 
     SET Value = 0
     WHERE Name LIKE '%CITY_TERRAIN_REPLACE%';
-INSERT OR REPLACE INTO Building_YieldChanges
-    VALUES ('BUILDING_PALACE', 'YIELD_FOOD', 2);
 
 
 
